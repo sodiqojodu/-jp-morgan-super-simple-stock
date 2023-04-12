@@ -10,20 +10,6 @@ This is the Global Beverage Corporation Exchange stock market trading applicatio
 - Compute the Volume Weighted Stock Price for stocks based on trades within a specific time period.
 - Calculate the GBCE All Share Index for a list of stocks.
 
-## Directory structure
-stock_market_app_/
-    ├── stock_market/
-    │   ├── __init__.py
-    │   ├── stock.py
-    │   ├── exceptions.py
-    │   ├── calculations.py
-    │   └── config.py
-    ├── tests/
-    │   ├── __init__.py
-    │   └── test_stock_market.py
-    └── README.md
-
-
 ## Module Descriptions
 
 - `calculations.py`: Contains functions for the GBCE All Share Index.
@@ -52,8 +38,6 @@ cd stock_market
 python3 -m venv venv
 source venv/bin/activate
 
-
-
 ## Usage
 
 The stock market application is implemented as a Python library. You can import the necessary classes and functions in your Python scripts to work with stocks, trades, and calculations.
@@ -77,3 +61,16 @@ stock.record_trade(1, "BUY", 50)
 
 python -m unittest discover tests
 This command will discover and run all tests in the `tests` directory. The test runner will display the results of the tests, including any failures or errors.
+
+## Directory structure
+stock_market_app_/
+    ├── stock_market/
+    │   ├── __init__.py
+    │   ├── stock.py
+    │   ├── exceptions.py
+    │   ├── calculations.py
+    │   └── config.py
+    ├── tests/
+    │   ├── __init__.py
+    │   └── test_stock_market.py
+    └── README.md
